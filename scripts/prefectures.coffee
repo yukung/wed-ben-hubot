@@ -6,4 +6,4 @@ module.exports = (robot) ->
                           .get()
     request (err, res, body) ->
       json = JSON.parse body
-      msg.send json.response.prefecture
+      msg.send json.response.prefecture.join ','
